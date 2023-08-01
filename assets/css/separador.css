@@ -1,0 +1,96 @@
+:root{
+    --verde:#00a149;
+    --blanco:#fff;
+    --rojo:#881014;
+    --oscuro:#000;
+    --titulos:'Arima Madurai',cursive;
+    --parafos:'Mulish',sans-serif;
+}
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+*,*::after, *::before{
+    box-sizing: inherit;
+}
+body{
+    font-size: 1.6rem;
+    overflow-x: hidden;
+}
+
+.btn{
+    text-decoration: none;
+    color: var(--blanco);
+    font-size: 2rem;
+    text-transform: capitalize;
+    padding: 1rem 4rem;
+    border-radius: 5px;
+    transition: all .3s ease-in-out;
+}
+@media(min-width:768px){
+    .btn{
+        font-size: 2.2rem;
+    }
+}
+.btn-verde{
+    background-color: rgb(0, 0, 0);
+    border: none;
+    display: inline-block;
+    margin-bottom: 2rem;
+    font-family: var(--parafos);
+}
+.btn-verde:hover{
+    background-color: rgb(103, 145, 30);
+}
+
+/* pie pagina*/ 
+.pie-pagina{
+    margin-top: 2rem;
+    background-color: rgb(20,20,20);
+    padding: 3rem;
+}
+@media(min-width:768px){
+    .contenedor-piepagina{
+        display: flex;
+        justify-content: space-between;
+    }
+}
+.info{
+    margin-bottom: 2rem;
+    flex: 0 0 calc(25% - 1rem);
+}
+.info h3, .info p{
+    color: var(--blanco);
+    text-align: center;
+}
+.info h3{
+    font-size: 2.2rem;
+}
+.info p{
+    font-size: 1.8rem;
+}
+.redes-pie{
+    text-align: center;
+    color: #fff;
+}
+.info input[type="email"]{
+    font-family: var(--parafos);
+    display: inline-block;
+    margin-bottom: 1rem;
+    padding: 0rem;
+    border-radius: 5px;
+    outline: none;
+    width: 100%;
+}
+.info input[type="submit"]{
+    padding: .5rem 2rem;
+    font-size: 1.8rem;
+    border-radius: 0%;
+}
+.footer{
+    text-align: center;
+    background-color: var(--oscuro);
+    color: var(--blanco);
+    padding: 1rem;
+    font-size: 2rem;
+}
