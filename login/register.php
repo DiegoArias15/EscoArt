@@ -24,41 +24,44 @@
                 <h2>Crear una cuenta</h2>
                 
                 <p>usa tu email para registrarte</p>
-                <form class="form">
+                <form method="post" class="form">
                    <label>
                     <i class='bx bx-user' ></i>
-                    <input type="text" placeholder="Nombres">
+                    <input type="text" name="nombre" placeholder="Nombres">
                 </label>
                 <label>
                     <i class='bx bx-user' ></i>
-                    <input type="text" placeholder="Primer Apellido">
+                    <input type="text" name="primerape" placeholder="Primer Apellido">
                 </label>
                 <label>
                     <i class='bx bx-user' ></i>
-                    <input type="text" placeholder="Segundo Apellido">
+                    <input type="text" name="segundoape" placeholder="Segundo Apellido">
                 </label>
             
                 <label>
                     <i class='bx bx-envelope' ></i>
-                    <input type="email" placeholder="Correo electronico">
+                    <input type="email" name="correo" placeholder="Correo electronico">
                 </label>
                 <label>
                     <i class='bx bx-lock-alt' ></i>
-                    <input type="password" placeholder="Contraseña">
+                    <input type="password" name="contrasena" placeholder="Contraseña">
                    </label>
 
                    <label>
                     <i class='bx bx-lock-alt' ></i>
-                    <input type="password" placeholder="Confirmar Contraseña">
+                    <input type="password" name="confirmarcontrasena" placeholder="Confirmar Contraseña">
                    </label>
                    
                    <a  href="iniciar sesion.html" target="_blank">
-                    <button class="button">Registrate</button>
+                    <button class="button" name="registrar" >Registrate</button>
                 </form>
             </div>
         </div>
     </div>
     
+    <?php
+    include("../login/registrar.php");
+    ?>
     
     <script src="aaaa.js"></script>
 
